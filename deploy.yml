@@ -1,0 +1,19 @@
+- hosts: monitor
+  become: true
+  gather_facts: true
+  roles:
+    - hypha.common.provision_ssh_keys
+    - hypha.common.harden_ssh
+    - hypha.common.setup
+    - hypha.common.unattended_upgrades
+    - geerlingguy.docker
+    - hypha.common.firewall
+    - hypha.common.nodejs
+    - hypha.common.prometheus
+    - hypha.common.prometheus_alertmanager
+    - hypha.common.loki
+    - hypha.common.prometheus_alertmanager_matrix
+    - hypha.common.prometheus_exporter_addnode
+    - hypha.common.nginx
+    - hypha.common.ssl
+    - hypha.common.node_exporter
