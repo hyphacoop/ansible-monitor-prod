@@ -6,7 +6,6 @@
     - hypha.common.harden_ssh
     - hypha.common.setup
     - hypha.common.unattended_upgrades
-    - geerlingguy.docker
     - hypha.common.firewall
     - hypha.common.nodejs
     - hypha.common.prometheus
@@ -17,3 +16,4 @@
     - hypha.common.nginx
     - hypha.common.ssl
     - hypha.common.node_exporter
+    - hypha.common.fail2ban
